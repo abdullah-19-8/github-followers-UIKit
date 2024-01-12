@@ -1,19 +1,17 @@
 //
-//  ViewController.swift
+//  SearchViewController.swift
 //  GHFollowers
 //
-//  Created by Abdulla Ahmad on 1/11/24.
+//  Created by Abdulla Ahmad on 1/12/24.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         view.backgroundColor = .systemPink
     }
-
-
 }
-

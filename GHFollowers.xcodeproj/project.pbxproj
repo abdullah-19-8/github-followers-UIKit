@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		87863DCE2B5026A400BA10D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87863DCD2B5026A400BA10D6 /* AppDelegate.swift */; };
 		87863DD02B5026A400BA10D6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87863DCF2B5026A400BA10D6 /* SceneDelegate.swift */; };
-		87863DD22B5026A400BA10D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87863DD12B5026A400BA10D6 /* ViewController.swift */; };
 		87863DD82B5026A400BA10D6 /* GHFollowers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 87863DD62B5026A400BA10D6 /* GHFollowers.xcdatamodeld */; };
 		87863DDA2B5026A700BA10D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87863DD92B5026A700BA10D6 /* Assets.xcassets */; };
 		87863DDD2B5026A700BA10D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87863DDB2B5026A700BA10D6 /* LaunchScreen.storyboard */; };
+		87BA8D622B50EBF800EBA52E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BA8D612B50EBF800EBA52E /* SearchViewController.swift */; };
+		87BA8D642B50EC2C00EBA52E /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BA8D632B50EC2C00EBA52E /* FavoritesListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		87863DCA2B5026A400BA10D6 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87863DCD2B5026A400BA10D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87863DCF2B5026A400BA10D6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		87863DD12B5026A400BA10D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		87863DD72B5026A400BA10D6 /* GHFollowers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GHFollowers.xcdatamodel; sourceTree = "<group>"; };
 		87863DD92B5026A700BA10D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87863DDC2B5026A700BA10D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87863DDE2B5026A700BA10D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87BA8D612B50EBF800EBA52E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		87BA8D632B50EC2C00EBA52E /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				87863DCD2B5026A400BA10D6 /* AppDelegate.swift */,
 				87863DCF2B5026A400BA10D6 /* SceneDelegate.swift */,
-				87863DD12B5026A400BA10D6 /* ViewController.swift */,
 				87863DD92B5026A700BA10D6 /* Assets.xcassets */,
 				87863DDB2B5026A700BA10D6 /* LaunchScreen.storyboard */,
 				87863DDE2B5026A700BA10D6 /* Info.plist */,
 				87863DD62B5026A400BA10D6 /* GHFollowers.xcdatamodeld */,
+				87BA8D612B50EBF800EBA52E /* SearchViewController.swift */,
+				87BA8D632B50EC2C00EBA52E /* FavoritesListViewController.swift */,
 			);
 			path = GHFollowers;
 			sourceTree = "<group>";
@@ -137,9 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87BA8D642B50EC2C00EBA52E /* FavoritesListViewController.swift in Sources */,
 				87863DD82B5026A400BA10D6 /* GHFollowers.xcdatamodeld in Sources */,
-				87863DD22B5026A400BA10D6 /* ViewController.swift in Sources */,
 				87863DCE2B5026A400BA10D6 /* AppDelegate.swift in Sources */,
+				87BA8D622B50EBF800EBA52E /* SearchViewController.swift in Sources */,
 				87863DD02B5026A400BA10D6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
