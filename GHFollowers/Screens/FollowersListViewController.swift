@@ -26,9 +26,6 @@ class FollowersListViewController: UIViewController {
             case .failure(let error):
                 self.presentGFAlertOnMainThread(title: "Bad Stuf happened", message: error.rawValue, buttonTitle: "Ok")
             }
-            
-            print("followers.count = \(followers.count)")
-            print(followers)
         }
     }
     
