@@ -7,12 +7,13 @@
 
 import UIKit
 
-class FollowersListViewController: UIViewController {
+class FollowersListViewController: UIViewController, UISearchControllerDelegate {
     
     enum Section { case main }
     
     var username: String!
     var followers: [Follower] = []
+    var filterFollowers: [Follower] = []
     var page = 1
     var hasMoreFollowers = true
     var collectionView: UICollectionView!
@@ -21,6 +22,7 @@ class FollowersListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()
+        configureSearchController()
         configureCollectionView()
         getFollowers(username: username, page: page)
         configureDataSource()
@@ -45,6 +47,14 @@ class FollowersListViewController: UIViewController {
         collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuesID)
     }
     
+    func configureSearchController() {
+        let searchController                                    = UISearchController()
+        searchController.searchResultsUpdater                   = self
+        searchController.delegate                               = self
+        searchController.searchBar.placeholder                  = "Search for a username"
+        navigationItem.searchController                         = searchController
+    }
+    
     func getFollowers(username: String, page: Int) {
         showLoadingView()
         NetworkManager.shared.getFollower(for: username, page: page) { [weak self] result in
@@ -59,7 +69,7 @@ class FollowersListViewController: UIViewController {
                     DispatchQueue.main.async { self.showEmptyState(with: message, in: self.view) }
                     return
                 }
-                self.updateData()
+                self.updateData(on: self.followers)
             case .failure(let error):
                 self.presentGFAlertOnMainThread(title: "Bad Stuf happened", message: error.rawValue, buttonTitle: "Ok")
             }
@@ -74,7 +84,7 @@ class FollowersListViewController: UIViewController {
         })
     }
     
-    func updateData() {
+    func updateData(on followers: [Follower]) {
         var snapshot = NSDiffableDataSourceSnapshot<Section, Follower>()
         snapshot.appendSections([.main])
         snapshot.appendItems(followers)
@@ -91,10 +101,26 @@ extension FollowersListViewController: UICollectionViewDelegate {
         let contentHeight   = scrollView.contentSize.height
         let height          = scrollView.frame.size.height
         
-        if offsetY > contentHeight - height{
+        if offsetY > contentHeight - height {
             guard hasMoreFollowers else { return }
             page += 1
             getFollowers(username: username, page: page)
         }
+    }
+}
+
+extension FollowersListViewController: UISearchResultsUpdating, UISearchBarDelegate {
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let filter = searchController.searchBar.text, !filter.isEmpty else {
+            updateData(on: followers)
+            return
+        }
+        
+        filterFollowers = followers.filter { $0.login.lowercased().contains(filter.lowercased()) }
+        updateData(on: filterFollowers)
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        updateData(on: followers)
     }
 }
