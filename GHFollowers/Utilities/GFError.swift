@@ -1,13 +1,13 @@
 //
-//  ErrorMessage.swift
+//  GFErrorMessage.swift
 //  GHFollowers
 //
-//  Created by Abdulla Ahmad on 1/16/24.
+//  Created by Abdulla Ahmad on 1/24/24.
 //
 
 import Foundation
 
-enum ErrorMessage: String, Error {
+enum GFError: String, Error {
     case invalidUsername    = "This username create an invalid request. Please try again."
     case unableToComplete   = "Unable to complete your request. Please check your internet connection."
     case invalidResponse    = "Invalid response from the server. Please try again."
