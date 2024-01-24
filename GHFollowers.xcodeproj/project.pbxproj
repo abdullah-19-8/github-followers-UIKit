@@ -29,6 +29,7 @@
 		87B62B632B54427A004EDDDA /* UIVIewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B62B622B54427A004EDDDA /* UIVIewController+Ext.swift */; };
 		87BA8D622B50EBF800EBA52E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BA8D612B50EBF800EBA52E /* SearchViewController.swift */; };
 		87BA8D642B50EC2C00EBA52E /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BA8D632B50EC2C00EBA52E /* FavoritesListViewController.swift */; };
+		87F0EF582B60ECA100F6AC8C /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F0EF572B60ECA100F6AC8C /* UserInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		87B62B622B54427A004EDDDA /* UIVIewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Ext.swift"; sourceTree = "<group>"; };
 		87BA8D612B50EBF800EBA52E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		87BA8D632B50EC2C00EBA52E /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
+		87F0EF572B60ECA100F6AC8C /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				87BA8D612B50EBF800EBA52E /* SearchViewController.swift */,
 				87BA8D632B50EC2C00EBA52E /* FavoritesListViewController.swift */,
 				87B62B5A2B542DC9004EDDDA /* FollowersListViewController.swift */,
+				87F0EF572B60ECA100F6AC8C /* UserInfoViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87B62B5D2B5439CA004EDDDA /* GFTitleLabel.swift in Sources */,
+				87F0EF582B60ECA100F6AC8C /* UserInfoViewController.swift in Sources */,
 				87BA8D642B50EC2C00EBA52E /* FavoritesListViewController.swift in Sources */,
 				87863DD82B5026A400BA10D6 /* GHFollowers.xcdatamodeld in Sources */,
 				8777A8952B524650008DA785 /* GFButton.swift in Sources */,
