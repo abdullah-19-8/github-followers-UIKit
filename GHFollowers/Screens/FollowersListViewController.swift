@@ -116,7 +116,7 @@ extension FollowersListViewController: UICollectionViewDelegate {
         let destVC          = UserInfoViewController()
         destVC.username     = follower.login
         let navController   = UINavigationController(rootViewController: destVC)
-        present(destVC, animated: true)
+        present(navController, animated: true)
     }
 }
 
