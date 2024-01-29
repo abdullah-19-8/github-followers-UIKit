@@ -21,6 +21,7 @@ class UserInfoViewController: UIViewController {
     var itemViews: [UIView] = []
     
     var username: String!
+    weak var delegate: FollowersListVCDelegate!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -118,6 +119,6 @@ extension UserInfoViewController: UserInfoVCDelegate {
     }
     
     func didTapGetFollowers(for user: User) {
-        // tt
+        delegate.didRequestFollowers(for: user.login)
     }
 }
