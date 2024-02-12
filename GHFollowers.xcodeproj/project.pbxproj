@@ -41,8 +41,8 @@
 		87B62B632B54427A004EDDDA /* UIVIewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B62B622B54427A004EDDDA /* UIVIewController+Ext.swift */; };
 		87BA8D622B50EBF800EBA52E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BA8D612B50EBF800EBA52E /* SearchViewController.swift */; };
 		87BA8D642B50EC2C00EBA52E /* FavoritesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BA8D632B50EC2C00EBA52E /* FavoritesListViewController.swift */; };
-		87CF46A32B665D270008163C /* GFRepoItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CF46A22B665D270008163C /* GFRepoItemViewController.swift */; };
-		87CF46A52B665F460008163C /* GFFollowerItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CF46A42B665F460008163C /* GFFollowerItemViewController.swift */; };
+		87CF46A32B665D270008163C /* GFRepoItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CF46A22B665D270008163C /* GFRepoItemVC.swift */; };
+		87CF46A52B665F460008163C /* GFFollowerItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87CF46A42B665F460008163C /* GFFollowerItemVC.swift */; };
 		87F0EF582B60ECA100F6AC8C /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F0EF572B60ECA100F6AC8C /* UserInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,8 +83,8 @@
 		87B62B622B54427A004EDDDA /* UIVIewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Ext.swift"; sourceTree = "<group>"; };
 		87BA8D612B50EBF800EBA52E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		87BA8D632B50EC2C00EBA52E /* FavoritesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListViewController.swift; sourceTree = "<group>"; };
-		87CF46A22B665D270008163C /* GFRepoItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFRepoItemViewController.swift; sourceTree = "<group>"; };
-		87CF46A42B665F460008163C /* GFFollowerItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFFollowerItemViewController.swift; sourceTree = "<group>"; };
+		87CF46A22B665D270008163C /* GFRepoItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFRepoItemVC.swift; sourceTree = "<group>"; };
+		87CF46A42B665F460008163C /* GFFollowerItemVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFFollowerItemVC.swift; sourceTree = "<group>"; };
 		87F0EF572B60ECA100F6AC8C /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -281,8 +281,8 @@
 		87CF46A62B665FBD0008163C /* ItemInfoViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				87CF46A42B665F460008163C /* GFFollowerItemViewController.swift */,
-				87CF46A22B665D270008163C /* GFRepoItemViewController.swift */,
+				87CF46A42B665F460008163C /* GFFollowerItemVC.swift */,
+				87CF46A22B665D270008163C /* GFRepoItemVC.swift */,
 				877BB5932B64480400FC1711 /* GFItemInfoViewController.swift */,
 			);
 			path = ItemInfoViewControllers;
@@ -360,7 +360,7 @@
 			files = (
 				87B62B5D2B5439CA004EDDDA /* GFTitleLabel.swift in Sources */,
 				877BB5882B615F7F00FC1711 /* GFError.swift in Sources */,
-				87CF46A52B665F460008163C /* GFFollowerItemViewController.swift in Sources */,
+				87CF46A52B665F460008163C /* GFFollowerItemVC.swift in Sources */,
 				87F0EF582B60ECA100F6AC8C /* UserInfoViewController.swift in Sources */,
 				87BA8D642B50EC2C00EBA52E /* FavoritesListViewController.swift in Sources */,
 				87863DD82B5026A400BA10D6 /* GHFollowers.xcdatamodeld in Sources */,
@@ -378,7 +378,7 @@
 				877AC46F2B577D0B008C066D /* FollowerCell.swift in Sources */,
 				87AFE8062B54E865000CF341 /* Follower.swift in Sources */,
 				87BA8D622B50EBF800EBA52E /* SearchViewController.swift in Sources */,
-				87CF46A32B665D270008163C /* GFRepoItemViewController.swift in Sources */,
+				87CF46A32B665D270008163C /* GFRepoItemVC.swift in Sources */,
 				87863DD02B5026A400BA10D6 /* SceneDelegate.swift in Sources */,
 				8752187A2B6F8CA9004DCFCE /* GFAletrContainerView.swift in Sources */,
 				8777A8972B524966008DA785 /* GFTextField.swift in Sources */,
