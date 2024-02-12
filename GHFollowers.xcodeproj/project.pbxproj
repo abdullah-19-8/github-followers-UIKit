@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8714A2E42B7A084C00F479A2 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8714A2E32B7A084C00F479A2 /* UIView.swift */; };
 		872199BC2B698AB700C6287F /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872199BB2B698AB700C6287F /* PersistenceManager.swift */; };
 		873D844E2B56B3940065701B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873D844D2B56B3940065701B /* NetworkManager.swift */; };
 		8752187A2B6F8CA9004DCFCE /* GFAletrContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875218792B6F8CA9004DCFCE /* GFAletrContainerView.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8714A2E32B7A084C00F479A2 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		872199BB2B698AB700C6287F /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		873D844D2B56B3940065701B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		875218792B6F8CA9004DCFCE /* GFAletrContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAletrContainerView.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				87B62B622B54427A004EDDDA /* UIVIewController+Ext.swift */,
 				8757E7B72B672C250044DFA3 /* Date+Ext.swift */,
+				8714A2E32B7A084C00F479A2 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				8757E7B82B672C250044DFA3 /* Date+Ext.swift in Sources */,
 				87B62B632B54427A004EDDDA /* UIVIewController+Ext.swift in Sources */,
 				87B62B5F2B543B6D004EDDDA /* GFBodyLabel.swift in Sources */,
+				8714A2E42B7A084C00F479A2 /* UIView.swift in Sources */,
 				877BB5922B64145F00FC1711 /* GFItemInfoView.swift in Sources */,
 				877BB58E2B63F58C00FC1711 /* Constants.swift in Sources */,
 				877BB5902B640E6B00FC1711 /* GFUserInfoHeaderViewController.swift in Sources */,

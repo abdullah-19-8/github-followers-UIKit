@@ -29,7 +29,7 @@ class GFUesrInfoHeaderViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        addSubviews()
+        view.addSubviews(avatarImageView, usernameLabel, nameLabel, locationLabel, locationImageView, bioLabel) 
         layoutUI()
         configureUIElements()
     }
@@ -52,15 +52,6 @@ class GFUesrInfoHeaderViewController: UIViewController {
             guard let self =  self else { return }
             DispatchQueue.main.async { self.avatarImageView.image =  image }
         }
-    }
-    
-    func addSubviews() {
-        view.addSubview(avatarImageView)
-        view.addSubview(usernameLabel)
-        view.addSubview(nameLabel)
-        view.addSubview(locationImageView)
-        view.addSubview(locationLabel)
-        view.addSubview(bioLabel)
     }
     
     func layoutUI() {
